@@ -1,2 +1,2 @@
 # swansonbot
-Ron Swanson bot.
+Ron Swanson bot for Slack.
