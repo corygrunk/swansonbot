@@ -20,6 +20,7 @@ var app = {
 }
 
 require('./src/help')(app)
+require('./src/quotes')(app)
 
 // presence polyfill
 require('beepboop-slapp-presence-polyfill')(slapp, {
@@ -28,11 +29,6 @@ require('beepboop-slapp-presence-polyfill')(slapp, {
 
 // attach Slapp to express server
 var server = slapp.attachToExpress(express())
-
-app.slapp.message('swanson', ['mention', 'direct_mention', 'direct_message'], (msg) => {
-  msg.say('Swanson quote goes here.')
-})
-
 
 // start http server
 server.listen(config.port, (err) => {
