@@ -22,11 +22,6 @@ var app = {
 require('./src/help')(app)
 require('./src/quotes')(app)
 
-// presence polyfill
-require('beepboop-slapp-presence-polyfill')(slapp, {
-  debug: true
-})
-
 // attach Slapp to express server
 var server = slapp.attachToExpress(express())
 
