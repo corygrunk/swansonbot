@@ -63,7 +63,7 @@ module.exports = app => {
 
 
   // response to the user typing "help"
-  app.slapp.message('^swanson', ['ambient'], (msg) => {
+  app.slapp.message('swanson', ['ambient'], (msg) => {
     msg.say(QUOTES)
   })
 }
